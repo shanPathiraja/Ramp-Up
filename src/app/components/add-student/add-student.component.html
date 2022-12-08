@@ -1,0 +1,26 @@
+<div>
+  <form (ngSubmit)="onSubmitted()" >
+    <div class="mb-3">
+      <label for="inFName" class="form-label">First Name</label>
+      <input type="text" name="fName" [(ngModel)]="fName"  class="form-control" id="inFName" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="inLName" class="form-label">Last Name</label>
+      <input type="text" name="lName" [(ngModel)]="lName"  class="form-control" id="inLName" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="inEmail" class="form-label">E mail</label>
+      <input type="email" name="email" [(ngModel)]="email"  class="form-control" id="inEmail" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="inPhone" class="form-label">Phone number</label>
+      <input type="tel" name="phone" [(ngModel)]="phone"  class="form-control" id="inPhone" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="inAddress" class="form-label">Address</label>
+      <input type="text" name="address" [(ngModel)]="address"  class="form-control" id="inAddress" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Student</button>
+  </form>
+</div>
